@@ -4,9 +4,7 @@ public with sharing class DonorTaskService {
 
         for (Task t : tasks) {
 
-            // Enhanced logic: Check if prefix already exists
-
-            if (t.Subject != null && !t.Subject.startsWith('[Donor Report]')) {
+            if (t.Subject != null) {
 
                 t.Subject = '[Donor Report] ' + t.Subject;
 
