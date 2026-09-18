@@ -46,3 +46,34 @@ $RECYCLE.BIN/
 **/__pycache__/
 **/.venv/
 **/venv/
+
+.copado
+# Local editor configuration folders specific to a local setup
+# There are more editors, but those two are some of the most used ones
+.idea
+.vscode
+# Managed package Apex Classes are wholly protected and not versionable
+**/classes/*__*.*
+# Managed package Apex Triggers are wholly protected and not versionable
+**/triggers/*__*.*
+# Managed package Visualforce Pages are wholly protected and not versionable
+**/pages/*__*.*
+# Managed package Visualforce Components are wholly protected and not versionable
+**/components/*__*.*
+# Managed package Custom Metadata are wholly protected and not versionable
+**/customMetadata/*__*.*
+# Managed package Custom Permissions are wholly protected and not versionable
+**/customPermissions/*__*.*
+# Managed package Flexipages are wholly protected and not versionable
+**/flexipages/*__*.*
+# Managed package Flows are wholly protected and not versionable
+**/flows/*__*.*
+# Managed package Permission Sets are wholly protected and not versionable
+**/permissionsets/*__*.*
+# additional metadata types
+**/flowDefinitions/**
+**/staticresources/**
+**/documents/**
+#**/installedPackages/**
+#**/dashboards/**
+#**/reports/**
