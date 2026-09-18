@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Is_Anniversary_Today__c</fullName>
+    <formula>MONTH(TODAY()) = MONTH( Anniversary_Date__c ) &amp;&amp;
+DAY(TODAY()) = DAY( Anniversary_Date__c )</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>Is Anniversary Today</label>
+    <type>Checkbox</type>
+</CustomField>

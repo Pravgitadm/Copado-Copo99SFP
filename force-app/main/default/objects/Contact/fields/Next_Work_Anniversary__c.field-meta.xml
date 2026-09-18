@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Next_Work_Anniversary__c</fullName>
+    <formula>IF(
+    MONTH(TODAY()) &gt; MONTH(Joining_Date__c) || 
+    (MONTH(TODAY()) = MONTH(Joining_Date__c) &amp;&amp; DAY(TODAY()) &gt; DAY(Joining_Date__c)),
+    DATE(YEAR(TODAY()) + 1, MONTH(Joining_Date__c), DAY(Joining_Date__c)),
+    DATE(YEAR(TODAY()), MONTH(Joining_Date__c), DAY(Joining_Date__c))
+)</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>Next Work Anniversary</label>
+    <required>false</required>
+    <type>Date</type>
+</CustomField>
